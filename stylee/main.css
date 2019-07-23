@@ -1,0 +1,351 @@
+/* Start Global */
+
+* {
+     box-sizing: border-box;
+}
+ .container {
+    width: 90%;
+    margin: auto;
+ }
+ ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+.clearfix {
+    clear: both
+}
+
+h2, h3, h4 {
+    font-weight: normal
+}
+.special-heading {
+	position: relative ;
+}
+.special-heading::after {
+	position: absolute ;
+	content: "" ;
+	border: 1.5px solid #1abc9c ;
+    width: 40px;
+    top: 30px ;
+	left :3px;
+}
+/*end global*/
+.navbar {
+    font-size: 18px;
+    height: 0;
+    color: #FFF;
+    position: relative;
+    z-index: 2
+}
+
+.navbar .brand {
+    float: left;
+    width: 40%;
+    text-transform: uppercase;
+    margin-top: 10px
+}
+
+.navbar .links-itams {
+    float: left;
+    width: 60%;
+    margin-top: 25px
+}
+
+.navbar .links-itams li {
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent
+}
+
+.navbar .links-itams li a {
+    color: #FFF;
+    text-decoration: none
+}
+
+.navbar .links-itams li.active a,
+.navbar .links-itams li a:hover {
+    color: #1abc9c
+}
+
+.navbar .links-itams li.active,
+.navbar .links-itams li:hover {
+    border-bottom: 2px solid #1abc9c;
+}
+
+/* End Navbar */
+
+/* Start Header */
+
+.header {
+    background: url('../images/header.jpg');
+    position: relative ;
+	color: #fff;
+}
+   .header .bx-wrapper {
+    height: 100%
+}
+
+.header .bx-wrapper .bx-viewport {
+    box-shadow: none;
+    border: 0;
+    background: none;
+    height: 100% !important;
+    text-align: center
+}
+
+.header .bxslider {
+    height: 100%
+}
+
+.header .bxslider li {
+    display: block
+}
+
+.header .bxslider li h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: bold
+}
+
+.header .bxslider li h2 span {
+    color: #1abc9c;
+}
+
+/* End Header */
+#About {
+ 	padding: 50px 20px 30px ;
+}
+#About .About-items {
+	float: left ;
+	margin-bottom: 10px;
+	width: 33.33333% ;
+}
+#About .About-items  i {
+	color:  #1abc9c;
+	float: left ;
+	width: 20% ;
+	margin-right: 5% ;
+	margin-top: 13px;
+}
+#About .About-items .About-info {
+	width: 75% ;
+	float: left ;
+}
+#About .About-items .About-info h3 {
+	color: #333 ;
+	margin-bottom: 10px ;
+}
+#About .About-items .About-info p {
+	margin-top: 0 ;
+	color: darkgray;
+}
+.hr-spraitor{
+	    border: 1px solid #EEE;
+ }
+/*our team*/
+.our-team {
+	  padding: 30px 0 ; 
+}
+.our-team .box {
+    	float: left ;
+}
+.our-team .box  p {
+		color: #888 ;
+		margin-top: 1px ;
+}
+.our-team .box img {
+	   width: 100%
+}
+.our-team .box:first-child {
+	    width: 30% ;
+}
+.our-team .box:not(:first-child) {
+        width: 16.5% ;
+		margin-left: 1%;
+		position: relative ;
+		text-align: right ;
+} 
+.our-team .box:not(:first-child)  .overlay {
+		position: absolute ;
+		top: 0 ;
+		right: 0 ;
+		bottom: 0 ;
+		left: 0 ;
+		width: 100% ;
+		background-color: rgba(26, 188, 156, .9);
+		color: #fff ;
+		font-size: 25px ;
+		line-height: 180px;
+		text-align: center ;
+		font-weight: 600 ;
+		display: none ;
+		transition: all .5s ease-in-out ;
+} 
+.our-team .box:not(:first-child):hover .overlay{
+	    display: block;
+		transition: all .5s ease-in-out ;
+ }
+#Testimonials {
+	    background-image: url(../images/header3.jpg);
+ 		background-size: cover;
+		height: 400px;
+		position: relative;
+		text-align: center;
+		padding: 80px 0;
+		overflow: hidden ;
+  }
+#Testimonials  .t-overlay {
+		position: absolute ;
+		left: 0 ;
+		right: 0 ;
+		top: 0 ;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		color: #FFF;
+		background-color: rgba(0, 0, 0, .8);
+	
+}
+#Testimonials  .t-overlay h2  {
+    font-size: 40px;
+    margin: 80px 0 10px;
+}
+#Testimonials  .t-overlay .slider q {
+	display: block ;
+	font-size: 20px ;
+	margin-top: 60px ;
+	line-height: 2 ;
+}
+#Testimonials  .t-overlay .slider p {
+    color: #1abc9c;
+	font-size: 40px ;
+}
+#Testimonials  .t-overlay .slider > div {
+	display: none ;
+}
+#Testimonials  .t-overlay .slider .active {
+	display: block ;
+}
+/* Portfolio */
+#Portfolio {
+	margin-top: 20px ;
+}
+ 
+#Portfolio ul {
+	margin-top: 50px ;
+}
+#Portfolio ul li {
+	display: inline-block ;
+	border: 2px solid #AAA ;
+	padding: 10px ;
+	margin-right: 5px;
+	border-radius: 5px ;
+	color: #A7A7A7;
+	cursor: pointer;
+}
+#Portfolio ul li.selected{
+	background-color:#1abc9c ;
+	color: #fff ;
+	border: 2px solid #1abc9c ;
+  }
+#Portfolio  .gallary {
+	margin-top: 50px  ;
+	overflow: hidden ;
+}
+#Portfolio .gallary .row > div .over{
+		position: absolute ;
+		top: 0 ;
+		right: 0 ;
+		bottom: 0 ;
+		left: 0 ;
+		width: 100% ;
+		background-color: rgba(26, 188, 156, .9);
+		color: #fff ;
+		font-size: 25px ;
+		line-height: 270px;
+		text-align: center ;
+		font-weight: 600 ;
+		display: none ;
+		transition: all .5s ease-in-out ;
+ }
+#Portfolio .gallary .row > div:hover .over{
+		 display: block;
+		transition: all .5s ease-in-out ;
+}
+#Portfolio .gallary .row > div .heart {
+	position: absolute ;
+	bottom: 20px ;
+	right: 20px ;
+	display: none;
+	color: #FFF ;
+}
+#Portfolio .gallary .row > div:hover .heart {
+		 display: block;
+		transition: all .5s ease-in-out ;
+}
+#Portfolio .gallary .row > div {
+	float: left ;
+    width: 32.66666%;
+	margin-bottom: 15px;
+	position: relative;
+}
+#Portfolio .gallary .row > div img {
+	width: 100%;
+}
+#Portfolio .gallary .row > div:nth-child(2){
+	margin-right: 1% ;
+	margin-left: 1%;
+}
+#Portfolio .mix{
+	display: none;
+}
+/* footer*/
+.footer {
+    background-color: #232323;
+    color: #6C6C6C;
+    padding: 40px 0;
+    overflow: hidden;
+}
+.footer .col {
+    width: 25%;
+    float: left;
+}
+.footer .col h2 {
+    color: #FFF;
+    font-size: 18px;
+}
+.footer .col p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+.footer .col i {
+    display: inline-block;
+    color: #979797;
+    border: 1px solid #979797;
+    width: 40px;
+    padding: 10px;
+}
+.footer .tags span {
+    display: inline-block;
+    color: #CCC;
+    border: 1px solid #979797;
+    padding: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.footer .recent div {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.footer .recent div img {
+    float: left;
+    margin-right: 10px;
+}
+.footer .blog ul li {
+    padding: 15px;
+    border-bottom: 1px solid #979797;
+    color: #CCC;
+}
